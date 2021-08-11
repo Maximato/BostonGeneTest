@@ -1,0 +1,6 @@
+services:
+  sig_api:
+    image: maximato/BostonGeneTest
+    command: uvicorn restapi_app:app
+    ports:
+      - "5000:5000"
