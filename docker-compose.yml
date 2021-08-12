@@ -1,8 +1,5 @@
-version: "1"
-
 services:
   sig_api:
-    image: signatures-restapi
-    command: uvicorn restapi_app:app
+    build: .
     ports:
       - "80:80"
